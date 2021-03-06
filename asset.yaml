@@ -1,0 +1,13 @@
+---
+Context:
+  ImageAssetPath: "./images"
+  AudioAssetPath: "./audio"
+  Duration: 180
+  Output:
+    Filename: out.mp4
+    Codec: H264
+Resources:
+  - ImageFilename: ss.png
+    AudioFilename: 駅_素材1.mp3
+  - ImageFilename: ss_2.png
+    AudioFilename: 駅_素材2.mp3
