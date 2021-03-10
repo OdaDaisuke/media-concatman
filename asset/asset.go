@@ -14,9 +14,19 @@ type Context struct {
 	Output         Output `yaml:"Output"`
 }
 
+type ImageFile struct {
+	Filename string `yaml:"Filename"`
+}
+
+type AudioFile struct {
+	Filename string `yaml:"Filename"`
+	Dirname  string `yaml:"Dirname"`
+	IsDir    bool   `yaml:"IsDir"`
+}
+
 type Resource struct {
-	ImageFilename string `yaml:"ImageFilename"`
-	AudioFilename string `yaml:"AudioFilename"`
+	ImageFile ImageFile `yaml:"ImageFile"`
+	AudioFile AudioFile `yaml:"AudioFile"`
 }
 
 type AssetSettings struct {
